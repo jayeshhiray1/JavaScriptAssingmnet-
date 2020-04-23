@@ -1,0 +1,156 @@
+<html>
+<body>
+<h2> JavaScript testing Samples</h2>
+
+<form id="myForm" 
+          method="GET"
+          target="_blank"
+          action=""> 
+        First name: 
+        <br> 
+        <input type="text"
+               name="fname" 
+               placeholder="FName"> 
+        <br> 
+        <br> Last name: 
+        <br> 
+        <input type="text" 
+               name="lname" 
+               placeholder="LName"> 
+        <br> 
+        <br> 
+    </form> 
+
+<button onclick="myGeeks()"> Submit </button>
+<button onclick="document.getElementById('demo').innerHTML='Test successfull:-'+Date()"> The time is?</button>
+
+<p id="demo"></p>
+<script language="javascript">
+
+var num1=100,num2=200
+sum=num1+num2
+///==================
+document.write("<hr><h3> Welcome to Wipro training\n</h3>")
+
+///==================
+document.writeln("<hr><br><b>If Statment in JavaScript</b>")
+
+///==================
+if(sum>=0){
+document.writeln("<br>Value of Number-"+sum)
+}else{
+document.writeln("<br>value is nagative ")
+}
+
+///==================
+document.writeln("<hr><br><b>Switch in JavaScript</b>")
+
+ var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+}
+document.writeln("<hr><br>Today is " + day)
+
+///==================
+document.writeln("<hr><br><b>ForLoop in JavaScript</b>")
+
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += "<br>"+cars[i] ;
+}
+document.writeln("<br>Lis is -" + text)
+
+///==================
+document.writeln("<hr><br><b>While in JavaScript</b>")
+
+
+var text = "";
+var i = 0;
+while (i < 10) {
+  text += "<br>The number is " + i;
+  i++;
+}
+document.writeln("<br>Lis is -" + text)
+
+///==================
+document.writeln("<hr><br><b>Funcations in JavaScript</b>")
+
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.writeln("<br>Funcation myFunction(4, 3) is -" + myFunction(4, 3))
+
+///==================
+document.writeln("<hr><br><b>User defined Object in JavaScript</b>")
+
+var person = {
+  firstName : "Jayesh",
+  lastName  : "Hiray",
+  empNo     : "JA20049996"
+};
+
+document.writeln("<br>Employee Name-</b>"+person.firstName +"<br>Employee ID-"+person.empNo)
+
+///==================
+document.writeln("<hr><br><b>Form Object in JavaScript</b>")
+function myGeeks() { 
+var un= window.document.forms.myForm.fname.value
+if(un.length==0){
+alert("Please enter User name")
+}else{
+
+            // Accessing form element. 
+            var txt = document.getElementById("myForm").id; 
+            
+            document.getElementById( "demo").innerHTML = un; 
+        } 
+		}
+		
+///==================
+document.writeln("<hr><br><b>String Objects in JavaScript</b>")		
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("John");
+document.writeln("<br>Both indexOf(), and lastIndexOf() return -1 if the text is not found:" + pos)
+///==================
+document.writeln("<hr><br><b>Array in JavaScript</b>")		
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += "<br>"+cars[i] ;
+}
+document.writeln("<br>Lis is -" + text)
+
+///==================
+document.writeln("<hr><br><b>Date Object in JavaScript</b>")	
+
+var birthdate= new Date()
+document.writeln("<br>Date is -" + birthdate)
+///==================
+document.writeln("<hr><br><b>Basic event in JavaScript</b>")
+
+
+</script>
+</body>
+</html>
